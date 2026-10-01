@@ -505,7 +505,7 @@ MultiplayerConfigs = {
         P2 = {
             Level = 30,
             Towers = {
-                ["Tower 1"] = { "Trapper", "DJ Booth", "Minigunner", "Ranger", "Farm" },
+                ["Tower 1"] = { "Trapper", "DJ Booth", "", "", "" },
             },
             Scripts = {
                 ["Tower 1"] = "",
