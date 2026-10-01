@@ -295,6 +295,21 @@ RevampAutoTrials = {
         },
     },
 
+--==============================================================================
+-- Evolution Data Configuration (Add new evolutions here!)
+-- Key: Base Tower Name (e.g. "Scout", "Shotgunner")
+-- Evo: In-game name of the evolved tower
+-- Coins: Coins required to buy the evolution
+-- Gems: Gems required to buy the evolution
+-- Order: (Optional) Display and execution order (1, 2, 3...)
+--==============================================================================
+EvoData = {
+    ["Scout"] = { Evo = "EvolvedOperator", Coins = 15000, Gems = 4500, Order = 1 },
+    ["Shotgunner"] = { Evo = "EvolvedEnforcer", Coins = 15000, Gems = 4750, Order = 2 },
+    ["Crook Boss"] = { Evo = "EvolvedKingpin", Coins = 15000, Gems = 5500, Order = 3 },
+    ["Minigunner"] = { Evo = "EvolvedJuggernaut", Coins = 15000, Gems = 6000, Order = 4 },
+},
+
 AutoEvoConfigs = {
 	   Coins = {
         Lose = {
@@ -450,9 +465,9 @@ TowerList = {
     },
    ["Evo"] = {
      { Name = "EvolvedOperator", Coins = 15000, Gems = 4500 },
-     { Name = "EvolvedEnforcer", Coins = 15000, Gems = 5000 },
-     { Name = "EvolvedKingpin", Coins = 15000, Gems = 5500 },  
-     { Name = "EvolvedJuggernaut", Coins = 15000, Gems = 6000 },
+     { Name = "EvolvedEnforcer", Coins = 15000, Gems = 4750 },
+     { Name = "EvolvedKingpin", Coins = 20000, Gems = 5500 },  
+     { Name = "EvolvedJuggernaut", Coins = 25000, Gems = 7000 },
    },
     ["Golden"] = {
         { Name = "Golden Scout", Cost = 50000 },
@@ -499,7 +514,7 @@ MultiplayerConfigs = {
                 ["Tower 1"] = { "Gatling Gun", "Trapper", "Farm", "Mercenary Base", "Hacker" },
             },
             Scripts = {
-                ["Tower 1"] = "https://raw.githubusercontent.com/Atxvy/Main/refs/heads/main/Trials/Fallbacks/FallenLayby.lua",
+                ["Tower 1"] = "https://raw.githubusercontent.com/Atxvy/Multiplayer/refs/heads/main/Coiins/LayByHost.lua",
             },
         },
         P2 = {
@@ -508,7 +523,7 @@ MultiplayerConfigs = {
                 ["Tower 1"] = { "Trapper", "DJ Booth", "", "", "" },
             },
             Scripts = {
-                ["Tower 1"] = "",
+                ["Tower 1"] = "https://raw.githubusercontent.com/Atxvy/Multiplayer/refs/heads/main/Coiins/LayByP2.lua",
             },
         },
     },
