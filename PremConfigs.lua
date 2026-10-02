@@ -542,7 +542,7 @@ MultiplayerConfigs = {
         P2 = {
             Level = 50,
             Towers = {
-                ["Tower 1"] = { "Farm", "Boomerang", "Crook Boss" },
+                ["Tower 1"] = { "Farm", "Pyromancer", "Accelerator", "Commander", "Hacker" },
             },
             Scripts = {
                 ["Tower 1"] = "",
